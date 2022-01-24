@@ -1,4 +1,17 @@
-## The Golden Rule: 
+1) add assets (shells?.)
+2) set up index (div's classes buttons id's and text.)
+3) create ball in .css. 
+4) create const and elements on javascript.
+5) connect buttons to javascript. 
+6) create functions to check guesses and hiding places.
+7) add math to log wins losses and total tries. 
+8) make it pretty in .css.
+
+
+
+
+
+
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
 
