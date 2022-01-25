@@ -24,6 +24,13 @@
     border-radius: 50%;
     background-color: rgb(240, 255, 24);
     margin: 10px;
-    
 
+}
+
+.text
+    {
+        /*width: 300px;*/
+        border: 2px solid rgb(128, 15, 0);
+        padding: 2px;
+        margin: 2px;
 }
