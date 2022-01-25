@@ -18,7 +18,7 @@ const hidingPlaces = ['one', 'two', 'three'];
 
 // let state
 let gameWon = 0;
-let gameLost = 0;
+let gameTotal = 0;
 
 // set event listeners 
 shell1btn.addEventListener('click', () => {
@@ -44,7 +44,7 @@ function handleGuess(correct, pick) {
     shellOne.classList.remove('ball');
     shellTwo.classList.remove('ball');
     shellThree.classList.remove('ball');
-    //totalGuesses++;
+    gameTotal++;
     //console.log(totalGuesses);
 
     if (correct === 'one') {
@@ -63,12 +63,12 @@ function handleGuess(correct, pick) {
     shellOne.classList.remove('hidden-png');
     
     if (pick === correct) {
-        //correctGuesses++;
+        gameWon++;
     }
 
-    /*totalEL.textContent = totalGuesses;
-    winsEL.textContent = correctGuesses;
-    lossesEL.textContent = totalGuesses - correctGuesses;*/
+    totalEL.textContent = gameTotal;
+    winsEL.textContent = gameWon;
+    lossesEL.textContent = gameTotal - gameWon;
 
     
 }
