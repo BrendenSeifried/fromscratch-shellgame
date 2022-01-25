@@ -9,3 +9,10 @@
     height: 300px;
     margin: 20px;
 }
+
+.ball {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+
+}
