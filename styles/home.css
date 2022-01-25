@@ -1,20 +1,28 @@
 /* add home page styles here */
+
+/*.main-section {
+    display:flex;
+    flex-direction:row;
+}*/
+
 .hiding-places{
     height: 300px;
     display:flex;
+    flex-direction:row;
 }
 
 .hidden-png {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     margin: 20px;
+    padding: 10px;
 }
 
 .ball {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-color: red;
+    background-color: rgb(240, 255, 24);
     margin: 10px;
 
 }
