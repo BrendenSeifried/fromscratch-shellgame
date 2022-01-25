@@ -45,7 +45,7 @@ function handleGuess(correct, pick) {
     shellTwo.classList.remove('ball');
     shellThree.classList.remove('ball');
     gameTotal++;
-    //console.log(totalGuesses);
+    
 
     if (correct === 'one') {
         shellOne.classList.add('ball');
