@@ -13,9 +13,31 @@ const lossesEL = document.getElementById('losses');
 
 const hidingPlaces = ['one', 'two', 'three'];
 
+
+
+
 // let state
+let gameWon = 0;
+let gameLost = 0;
 
 // set event listeners 
+shell1btn.addEventListener('click', () => {
+    const hidingSpot = Math.floor(Math.random() * 3);
+    const answer = hidingPlaces[hidingSpot];
+    handleGuess(answer, 'one');
+});
+
+shell2btn.addEventListener('click', () => {
+    const hidingSpot = Math.floor(Math.random() * 3);
+    const answer = hidingPlaces[hidingSpot];
+    handleGuess(answer, 'two');
+});
+
+shell3btn.addEventListener('click', () => {
+    const hidingSpot = Math.floor(Math.random() * 3);
+    const answer = hidingPlaces[hidingSpot];
+    handleGuess(answer, 'three');
+});
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
