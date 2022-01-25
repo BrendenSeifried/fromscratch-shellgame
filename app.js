@@ -49,12 +49,18 @@ function handleGuess(correct, pick) {
 
     if (correct === 'one') {
         shellOne.classList.add('ball');
+        shellTwo.classList.remove('hidden-png');
+        shellThree.classList.remove('hidden-png');
 
     } else if (correct === 'two') {
         shellTwo.classList.add('ball');
+        shellOne.classList.remove('hidden-png');
+        shellThree.classList.remove('hidden-png');
 
     } else if (correct === 'three') 
         shellThree.classList.add('ball');
+    shellTwo.classList.remove('hidden-png');
+    shellOne.classList.remove('hidden-png');
     
     if (pick === correct) {
         //correctGuesses++;
