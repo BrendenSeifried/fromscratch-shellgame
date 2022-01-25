@@ -18,12 +18,16 @@
     padding: 30px;
 }
 
-.ball {
-    height: 60px;
+.ball::after {
+   /* height: 60px;
     width: 60px;
     border-radius: 50%;
     background-color: rgb(240, 255, 24);
-    margin: 10px;
+    margin: 10px;*/
+
+    font-size: 8rem;
+    content: '💰'
+    
 
 }
 
