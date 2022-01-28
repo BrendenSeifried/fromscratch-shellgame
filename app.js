@@ -22,28 +22,34 @@ let gameTotal = 0;
 
 // set event listeners 
 shell1btn.addEventListener('click', () => {
+    reset();
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingPlaces[hidingSpot];
     handleGuess(answer, 'one');
+    dispalyResults();
+    //r
 });
 
 shell2btn.addEventListener('click', () => {
+    reset();
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingPlaces[hidingSpot];
     handleGuess(answer, 'two');
+    dispalyResults();
+    
 });
 
 shell3btn.addEventListener('click', () => {
+    reset();
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingPlaces[hidingSpot];
     handleGuess(answer, 'three');
+    dispalyResults();
 });
 
   // get user input
 function handleGuess(correct, pick) {
-    shellOne.classList.remove('ball');
-    shellTwo.classList.remove('ball');
-    shellThree.classList.remove('ball');
+   
     gameTotal++;
     
 
@@ -66,11 +72,21 @@ function handleGuess(correct, pick) {
         gameWon++;
     }
 
+   
+
+    
+}
+
+function dispalyResults(){
     totalEL.textContent = gameTotal;
     winsEL.textContent = gameWon;
     lossesEL.textContent = gameTotal - gameWon;
+}
 
-    
+function reset() {
+    shellOne.classList.remove('ball');
+    shellTwo.classList.remove('ball');
+    shellThree.classList.remove('ball');
 }
   // use user input to update state 
   // update DOM to reflect the new state
