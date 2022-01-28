@@ -26,8 +26,8 @@ shell1btn.addEventListener('click', () => {
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingPlaces[hidingSpot];
     handleGuess(answer, 'one');
-    dispalyResults();
-    //r
+    displayResults();
+    
 });
 
 shell2btn.addEventListener('click', () => {
@@ -35,7 +35,7 @@ shell2btn.addEventListener('click', () => {
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingPlaces[hidingSpot];
     handleGuess(answer, 'two');
-    dispalyResults();
+    displayResults();
     
 });
 
@@ -44,7 +44,7 @@ shell3btn.addEventListener('click', () => {
     const hidingSpot = Math.floor(Math.random() * 3);
     const answer = hidingPlaces[hidingSpot];
     handleGuess(answer, 'three');
-    dispalyResults();
+    displayResults();
 });
 
   // get user input
@@ -77,7 +77,7 @@ function handleGuess(correct, pick) {
     
 }
 
-function dispalyResults(){
+function displayResults(){
     totalEL.textContent = gameTotal;
     winsEL.textContent = gameWon;
     lossesEL.textContent = gameTotal - gameWon;
