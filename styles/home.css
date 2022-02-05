@@ -1,1 +1,71 @@
 /* add home page styles here */
+
+/*.main-section {
+    display:flex;
+    flex-direction:row;
+}*/
+
+.hiding-places {
+    /*height: 300px;*/
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    /*justify-content: flex-end;*/
+    
+}
+
+.hidden-png {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 30px;
+    
+    
+}
+
+.ball::after {
+   /* height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(240, 255, 24);
+    margin: 10px;*/
+
+    font-size: 8rem;
+    content: '💰'
+    
+    
+
+}
+
+.text
+    {
+        /*width: 300px;*/
+        border: 3px solid rgb(0, 0, 0);
+        padding: 1px;
+        margin: 2px;
+        background-color: #7EBDC2 ;
+        
+}
+
+#boxer
+{
+    background-color: #ffffff ;
+    width:250px;
+    margin: 100px;
+}
+
+.hiding-place {
+   /* justify-content: flex-end;*/
+    align-items: center;
+    justify-content: baseline;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    
+}
+
+#test {
+    flex-direction: row;
+    display: flex;
+}

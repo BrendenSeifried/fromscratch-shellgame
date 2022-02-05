@@ -2,11 +2,11 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: white;
+    --color1: #BB4430;
+    --color2: #231F20;
     --color3: white;
     --color4: white;
-    --color5: white;
+    --color5: #F3DFA2;
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -50,7 +50,7 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 4px var(--color1);
 }
 
 header {
@@ -89,3 +89,4 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
